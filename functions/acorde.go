@@ -17,7 +17,8 @@ func AcordeIntent(context context.Context, request *alexa.Request, session *alex
 	} else {
 
 		response.SetStandardCard(cfg.CardTitle, cfg.SpeechCancel, cfg.ImageSmall, cfg.ImageLong)
-		response.SetOutputText("El acorde elegido es: " + request.Intent.Slots["acorde"].Value)
+		//response.SetOutputText("El acorde elegido es: " + request.Intent.Slots["acorde"].Value)
+		response.AddAudioPlayer("AudioPlayer.Play","REPLACE_ALL","aaaa","https://raw.githubusercontent.com/alknopfler/alexa-profesor-guitarra/master/sounds/cmaj.mp3",0)
 		response.ShouldSessionEnd = true
 		return
 	}
