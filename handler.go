@@ -67,7 +67,7 @@ func (h *ProfesorGuitarra) OnIntent(context context.Context, request *alexa.Requ
 		log.Println("Entra por default Intent")
 		f.Navigate(context, request, session, aContext, response)
 	}
-	log.Println("antes del nil onlaunch")
+	log.Println("antes del nil onIntent")
 	return nil
 }
 
