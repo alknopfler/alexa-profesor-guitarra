@@ -49,8 +49,8 @@ func (h *ProfesorGuitarra) OnIntent(context context.Context, request *alexa.Requ
 
 	switch request.Intent.Name {
 
-	case cfg.QueryIntent:
-		f.QueryIntent(context, request, session, aContext, response)
+	case cfg.AcordeIntent:
+		f.AcordeIntent(context, request, session, aContext, response)
 
 	case cfg.Cancel,cfg.Stop:
 		f.Cancel(context, request, session, aContext, response)

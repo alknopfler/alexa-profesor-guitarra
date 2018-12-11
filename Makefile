@@ -23,7 +23,7 @@ clean:
 
 create:
 	@aws lambda create-function                                                  \
-	  --function-name BuscadorSitios                                                \
+	  --function-name ProfesorGuitarra                                                \
 	  --zip-file fileb://handler.zip                                             \
 	  --role $(ROLE_ARN)                                                         \
 	  --runtime go1.x                                                       \
@@ -31,11 +31,11 @@ create:
 
 update:
 	@aws lambda update-function-code                                             \
-	  --function-name BuscadorSitios                                                 \
+	  --function-name ProfesorGuitarra                                                 \
 	  --zip-file fileb://handler.zip
 
 invoke:
 	@aws lambda invoke                                                           \
-	  --function-name BuscadorSitios invoke.out
+	  --function-name ProfesorGuitarra invoke.out
 
 .PHONY: all build pack clean create update invoke
