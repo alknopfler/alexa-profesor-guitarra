@@ -8,9 +8,7 @@ import (
 )
 
 func AcordeIntent(context context.Context, request *alexa.Request, session *alexa.Session, aContext *alexa.Context, response *alexa.Response) {
-
-
-
+	log.Println("-- Acorde Intent --")
 	if request.DialogState != "COMPLETED" {
 		log.Println("Get into dialog to confirm name 'acordeIntent'")
 		response.AddDialogDirective("Dialog.Delegate", "", "", &request.Intent)
