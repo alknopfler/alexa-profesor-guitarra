@@ -17,7 +17,7 @@ func AcordeIntent(context context.Context, request *alexa.Request, session *alex
 	} else {
 
 		response.SetStandardCard(cfg.CardTitle, cfg.SpeechCancel, cfg.ImageSmall, cfg.ImageLong)
-		response.AddAudioPlayer("El acorde elegido es: " + request.Intent.Slots["acorde"].Value)
+		response.SetOutputText("El acorde elegido es: " + request.Intent.Slots["acorde"].Value)
 		response.ShouldSessionEnd = true
 		return
 	}
