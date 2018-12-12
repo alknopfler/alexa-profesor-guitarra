@@ -26,7 +26,7 @@ const(
 
 	ImageAmaj				= "https://raw.githubusercontent.com/alknopfler/alexa-profesor-guitarra/master/images/Amaj.jpg"
 	ImageAmin				= "https://raw.githubusercontent.com/alknopfler/alexa-profesor-guitarra/master/images/Amin.jpg"
-	ImageBmaj				= "https://raw.githubusercontent.com/alknopfler/alexa-profesor-guitarra/master/images/Bmaj.jpg"
+	ImageBmaj				= "https://raw.githubusercontent.com/alknopfler/alexa-profesor-guitarra/master/images/Bjam.jpg"
 	ImageBmin				= "https://raw.githubusercontent.com/alknopfler/alexa-profesor-guitarra/master/images/Bmin.jpg"
 	ImageCmaj				= "https://raw.githubusercontent.com/alknopfler/alexa-profesor-guitarra/master/images/Cmaj.jpg"
 	ImageCmin				= "https://raw.githubusercontent.com/alknopfler/alexa-profesor-guitarra/master/images/Cmin.jpg"
