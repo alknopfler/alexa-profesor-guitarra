@@ -51,7 +51,7 @@ func (h *ProfesorGuitarra) OnIntent(context context.Context, request *alexa.Requ
 
 	case cfg.AcordeIntent:
 		f.AcordeIntent(context, request, session, aContext, response)
-		response.ShouldSessionEnd = false
+
 	case cfg.Cancel,cfg.Stop:
 		f.Cancel(context, request, session, aContext, response)
 		response.ShouldSessionEnd = true
