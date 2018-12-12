@@ -39,7 +39,6 @@ func AcordeIntent(context context.Context, request *alexa.Request, session *alex
 		response.SetOutputText(cfg.SpeechAcorde)
 		response.AddAudioPlayer("AudioPlayer.Play","REPLACE_ALL", acorde.sound, acorde.sound,0)
 		response.ShouldSessionEnd = false
-		response.SetOutputText("¿Qué quieres hacer ahora?")
 		return
 	}
 }
