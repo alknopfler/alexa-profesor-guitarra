@@ -38,7 +38,6 @@ func (h *ProfesorGuitarra) OnLaunch(context context.Context, request *alexa.Requ
 	response.SetOutputText(cfg.SpeechOnLaunch)
 
 	response.ShouldSessionEnd = false
-	response.SetRepromptText(cfg.SpeechNavigate)
 
 	return nil
 }
