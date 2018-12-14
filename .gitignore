@@ -1,6 +1,2 @@
-sounds
-vendor
-*.lock
-*.zip
-handler
-.DS_Store
+node_modules
+*lock*
